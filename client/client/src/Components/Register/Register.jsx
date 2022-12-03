@@ -30,7 +30,7 @@ function Register() {
         }
 
         try {
-            let data = await fetch('http://localhost:5000/createUser', {
+            let data = await fetch('https://teach-backened.vercel.app/createUser', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -39,7 +39,7 @@ function Register() {
             });
             let res = await data.json();
             console.log(res)
-            localStorage.setItem("user",JSON.stringify(res))
+            localStorage.setItem("user",JSON.stringify(res)) 
 
             
                 // alert(res.message)

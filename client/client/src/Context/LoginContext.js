@@ -9,7 +9,7 @@ export function LoginContextProvider({children}) {
     const checkUser = async (token) => {
         try {
             if (token) {
-                let res = await fetch('https://mern-todo-backend-two.vercel.app/checkUserByToken',{
+                let res = await fetch('https://teach-backened.vercel.app/checkUserByToken',{
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',

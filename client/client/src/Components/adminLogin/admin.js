@@ -18,7 +18,7 @@ function Login() {
         }
         // console.log(body)
         try {
-            let data = await fetch('http://localhost:5000/adminLogin', {
+            let data = await fetch('https://teach-backened.vercel.app/adminLogin', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -41,6 +41,8 @@ function Login() {
         }
 
     }
+
+    
 
     return (
         <div  >

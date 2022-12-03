@@ -4,7 +4,7 @@ import Homepage from './Components/Hompage/Homepage';
 import Login from './Components/Login/Login';
 import Navbar from './Components/Navbar/Navbar';
 import Register from './Components/Register/Register';
-import Notes from './Components/Notes/Notes';
+import Data from './Components/Notes/Notes';
 import AdminRegister from "./Components/adminRegister/adminRegister"
 import  AdminLogin from "./Components/adminLogin/admin"
 
@@ -16,9 +16,11 @@ function App() {
       <Routes>
         <Route path="/" element={<Homepage />} />
         <Route path="/adminLogin" element={<AdminLogin />} />
-        <Route path="/notes" element={<Notes />} />
+        <Route path="/notes" element={<Data />} />
         <Route path="/create" element={<AdminRegister />} />
         <Route path="/register" element={<Register />} />
+        
+
       </Routes>
     </div>
   );

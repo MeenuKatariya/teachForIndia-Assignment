@@ -22,7 +22,7 @@ function AdminRegister() {
         }
 
         try {
-            let data = await fetch('http://localhost:5000/create', {
+            let data = await fetch('https://teach-backened.vercel.app/create', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
